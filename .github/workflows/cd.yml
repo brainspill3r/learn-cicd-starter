@@ -20,6 +20,7 @@ jobs:
 
       - name: Build app
         run: ./scripts/buildprod.sh
+<<<<<<< HEAD
 
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v1
@@ -29,3 +30,5 @@ jobs:
 
       - name: Build and push image
         run:  gcloud builds submit --tag europe-west2-docker.pkg.dev/notely-449407/cloud-run-deployer/app:latest .
+=======
+>>>>>>> 31fdb79a3fce743fb7af78888339021d08962933
