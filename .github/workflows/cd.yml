@@ -30,6 +30,10 @@ jobs:
 
       - name: Make scripts executable
         run: chmod +x ./scripts/buildprod.sh
+             chmod +x ./scripts/migrate.sh
+
+      - name: Run Migrations
+        run: ./scripts/migrate.sh
 
       - name: Set up Go
         uses: actions/setup-go@v5
