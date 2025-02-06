@@ -29,8 +29,7 @@ jobs:
         run: ~/go/bin/goose -dir sql/schema sqlite "$DATABASE_URL" up
 
       - name: Make scripts executable
-        run: chmod +x ./scripts/buildprod.sh
-             chmod +x ./scripts/migrateup.sh
+        run: chmod +x ./scripts/buildprod.sh && chmod +x ./scripts/migrateup.sh
 
       - name: Run Migrations
         run: ./scripts/migrate.sh
