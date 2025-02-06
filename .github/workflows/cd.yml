@@ -30,7 +30,7 @@ jobs:
 
       - name: Make scripts executable
         run: chmod +x ./scripts/buildprod.sh
-             chmod +x ./scripts/migrate.sh
+             chmod +x ./scripts/migrateup.sh
 
       - name: Run Migrations
         run: ./scripts/migrate.sh
